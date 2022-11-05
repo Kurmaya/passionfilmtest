@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+<link rel="stylesheet" href="css/test.css">
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"  />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&family=Work+Sans:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <script src="scripts\try.js" defer charset="utf-8"></script>
+    <title></title>
+  </head>
+  <body>
+
+
+
+      <!--- This may need to change --->
+      <div class="test">
+      <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images\Final\vaani-fixderma-1.jpg" />
+          <h3>Title</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="images\Final\cbtf-fight.jpg" />
+          <h3>Title</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="images\Final\magik-cook.jpg" />
+          <h3>Title</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="images\Final\mi-arcus-1.jpg" />
+          <h3>Title</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="images\Final\mr.makhana-3.jpg" />
+          <h3>Title</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="images\Final\simco-1.jpg" />
+          <h3>Title</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="images\Final\vaani-fixderma-1.jpg" />
+          <h3>Title</h3>
+        </div>
+
+      </div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- <script>
+     var swiper = new Swiper(".mySwiper", {
+       effect: "coverflow",
+       grabCursor: true,
+
+       centeredSlides: true,
+       slidesPerView: "auto",
+       coverflowEffect: {
+         rotate: 30,
+         stretch: 0,
+         depth: 300,
+         modifier: 1,
+         slideShadows: true,
+
+       },
+        loop:true,
+        autoplay: {
+          delay:3500,
+          disableOnInteraction:true,
+
+        },
+
+       // pagination: {
+       //   el: ".swiper-pagination",
+       // },
+     });
+   </script> -->
+   <script>
+   const swiper = new Swiper('.swiper', {
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+  centeredSlides: true,
+  effect: "coverflow",
+  grabCursor: true,
+  rotate: 30 ,
+  depth:200,
+  modifier:9,
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+    1000: {
+      slidesPerView: "auto",
+      spaceBetween: 50,
+      depth:300,
+      modifier: 15
+    }
+
+  }
+})
+</script>
+  </body>
+</html>
