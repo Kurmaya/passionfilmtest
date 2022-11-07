@@ -61,3 +61,46 @@
 
 </div>
   </div> -->
+
+    <!-- <div class="carousel">
+      <button class="carousel__button carousel__button--prev is-hidden">
+        <img src="images\left-arrow-red.svg" alt="">
+      </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+            <img class="carousel__image" src="images\Final\dhwani-1.jpg" alt="">
+
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__image" src="images\Final\fix-my-curls-1.jpg" alt="">
+
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__image" src="images\Final\mi-arcus-2.jpg" alt="">
+
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__image" src="images\Final\emraan-car.jpg" alt="">
+
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__image" src="images\Final\magik-cook.jpg" alt="">
+
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__image" src="images\Final\malaika-dromen.jpg" alt="">
+
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--next">
+        <img src="images\right-arrow-red.svg" alt="">
+      </button>
+  <div class="carousel__nav">
+  <!-- <button class="carousel__indicator selected"></button>
+  <button class="carousel__indicator"></button>
+  <button class="carousel__indicator"></button> -->
+  </div>
+
+      </div>

@@ -6,6 +6,26 @@ var navbar = document.querySelector("nav");
 var rotate=document.querySelectorAll('.rotate-card');
 var awardImg=document.querySelectorAll('.award-holder .main-awards-list');
 var awardText=document.querySelectorAll('.award-text');
+var fadeInText=document.querySelectorAll('.fade-in-text h1');
+
+// for(let i=0;i<fadeInText.length;i++){
+//   fadeInText[i].classList.add('active');
+//   setTimeout(function () {
+// fadeInText[i].classList.remove('active');
+//
+//   }, 5000);
+//
+// }
+
+setInterval(function(){
+var container = document.getElementById('content');
+var tmp = container.innerHTML;
+container.innerHTML= tmp;
+}, 35100 // length of the whole show in milliseconds
+);
+
+
+
 // awardImg.forEach(e =>{
 //   e.addEventListener('click',function(){
 // console.log(e.parentElement);
@@ -128,7 +148,7 @@ const mid = document.getElementById('middle');
 const cards= document.querySelectorAll(".card");
 
 const observer = new IntersectionObserver(call, {
-  threshold: .1,
+  threshold: .08,
 })
 conts.forEach(cont => {
   observer.observe(cont);
