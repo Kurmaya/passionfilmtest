@@ -2,7 +2,7 @@ var toggleButton =document.querySelector(".toggle-button");
 var navbarLinks = document.querySelector(".navbar-links");
 var navbarItems= document.querySelectorAll('.navbar-item');
 var navbar = document.querySelector("nav");
-
+var mid= document.getElementById("middle-p");
 
 
 
@@ -28,7 +28,7 @@ navbarItems.forEach( item => {
 })
 
 
-
+var contact= document.getElementById('contact-main');
 const header = document.querySelector('nav');
 const homeMain = document.querySelector('.hero');
 const homeMainOptions = {
@@ -37,18 +37,18 @@ const homeMainOptions = {
 };
 
 
-const navObserver = new IntersectionObserver(function(entries, navObserver) {
-  entries.forEach(entry => {
-
-    if (!entry.isIntersecting) {
-      header.classList.add('nav-scrolled');
-    } else {
-      header.classList.remove('nav-scrolled');
-    }
-  })
-}, homeMainOptions)
-
-navObserver.observe(homeMain);
+// const navObserver = new IntersectionObserver(function(entries, navObserver) {
+//   entries.forEach(entry => {
+//
+//     if (!entry.isIntersecting) {
+//       header.classList.add('nav-scrolled');
+//     } else {
+//       header.classList.remove('nav-scrolled');
+//     }
+//   })
+// }, homeMainOptions)
+//
+// navObserver.observe(homeMain);
 
 // animations on scroll //
 var call = function(entries) {
@@ -77,7 +77,19 @@ showcase.forEach(show =>{
 })
 
 
+midP.addEventListener('mousemove', function(e){
 
+  navbar.classList.add("nav-scrolled-2");
+setTimeout(function () {
+  navbar.classList.remove('nav-scrolled-2');
+}, 3000);
+});
+
+
+// setInterval(function(){
+//
+// }, 1500 // length of the whole show in milliseconds
+// );
 observer2.observe(swipe);
 const lightbox =document.getElementById('lightbox');
 const lightHolder=document.getElementById('light-holder');
@@ -133,3 +145,14 @@ lightbox.addEventListener('click', e => {
   lightHolder.querySelector('iframe').src= "";
 
 })
+var hover=document.querySelector('.hover');
+// var naav= function (){
+//   navbar.classList.toggle('nav-scrolled');
+// }
+// hover.addEventListener('mouseover',function(){
+// document.querySelector('nav').classList.remove('nav-scrolled')
+// console.log('hover');
+// });
+// hover.addEventListener('mouseleave',function(){
+//   document.querySelector('nav').classList.add('nav-scrolled')
+// });
